@@ -92,6 +92,11 @@
 # Clean up and comment the code
 # Create auto-update version (comming soon)
 
+if [ -n "$DEBUG" ]; then
+    PS4=':${LINENO}+'
+    set -x
+fi
+
 # Script version/name variables
 version='0.10'
 scriptname='lectl'
